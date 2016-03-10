@@ -1,0 +1,82 @@
+public class test {
+	public static void main(String[] args){
+		int a1,a2,b1,b2,k;
+		char[] ch={'+','-','*','/'};
+		for(int i=0;i<30;i++)
+		{	
+			int index=(int)(Math.random()*4);  //控制运算符数组下标
+			a1=(int)(Math.random()*100);
+			a2=(int)(Math.random()*99+1);
+			b1=(int)(Math.random()*100);
+			b2=(int)(Math.random()*99+1);
+			k=(int)(Math.random()*2);        //控制是否是整数或分数
+			if(k==0)//k=1输出整数运算
+			{
+				if(index==0) //加法运算
+				{
+					System.out.print(a1);
+					System.out.print(ch[index]);
+					System.out.println(b1+"=");
+				} 
+				if(index==1)//减法运算
+				{
+					System.out.print(a1);
+					System.out.print(ch[index]);
+					System.out.println(b1+"=");
+				}
+				if(index==2)//乘法运算
+				{
+					System.out.print(a1);
+					System.out.print(ch[index]);
+					System.out.println(b1+"=");
+				}
+				if(index==3)//除法运算
+				{
+					if(b1!=0)
+					{
+					   System.out.print(a1);
+					   System.out.print(ch[index]);
+					   System.out.println(b1+"=");
+					}
+					else
+					{
+						System.out.print(b1);
+						System.out.print(ch[index]);
+					    System.out.println(a1+"=");
+					}
+				}
+			}
+		    else
+			{
+		    	
+				if(index==0)
+				{
+					    System.out.print(a1+"/"+a2);
+					    System.out.print(ch[index]);
+					    System.out.println(b1+"/"+b2+"=");
+				}
+				if(index==1)
+				{
+					    System.out.print(a1+"/"+a2);
+					    System.out.print(ch[index]);
+					    System.out.println(b1+"/"+b2+"=");
+				}
+				if(index==2)
+				{
+					    System.out.print(a1+"/"+a2);
+					    System.out.print(ch[index]);
+					    System.out.println(b1+"/"+b2+"=");
+				}
+				if(index==3)
+				{
+					    System.out.print(a1+"/"+a2);
+					    System.out.print(ch[index]);
+					    System.out.println(b1+"/"+b2+"=");
+				}
+			}
+		}
+			
+		
+	}
+
+}
